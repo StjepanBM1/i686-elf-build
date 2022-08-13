@@ -7,11 +7,10 @@ i686-elf-build
         a cross-compiler & to test it
         on a simple (bare bones) OS.
 
-    [ DO NOTE ]
-        You can increase number of cores
-        used for the compilation.
-        `make -j <number of cores>`
+    [ HOW TO USE ]
+        `./i686-elf-build.sh <number of cores>`
 
+        
     [ SOURCES ]
         OS Used   :: https://wiki.osdev.org/Bare_Bones
         Binutils  :: https://ftp.gnu.org/gnu/binutils/?C=M%3BO%3DA

@@ -25,18 +25,18 @@ mkdir gcc-build
 # Binutils
 cd binutils-build
     ../binutils-2.37/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
-    make -j4
-    make -j4 install
+    make -j$1
+    make -j$1 install
 cd ..
 
 # GCC
 cd gcc-build
 
     ../gcc-11.1.0/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c,c++ --without-headers
-    make -j4 all-gcc
-    make -j4 all-target-libgcc
-    make -j4 install-gcc
-    make -j4 install-target-libgcc
+    make -j$1 all-gcc
+    make -j$1 all-target-libgcc
+    make -j$1 install-gcc
+    make -j$1 install-target-libgcc
 
 cd ..
 
