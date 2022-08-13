@@ -9,6 +9,7 @@
 export PREFIX="$HOME/Toolchain/i686-elf"
 export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
+export TOOLCHAIN="$HOME/Toolchain/i686-elf"
 
 # Downloads
 wget https://ftp.gnu.org/gnu/gcc/gcc-11.1.0/gcc-11.1.0.tar.gz
@@ -47,3 +48,4 @@ echo "# CROSS-COMPILER STUFF" >> ~/.bashrc
 echo "export PREFIX="$HOME/Toolchain/i686-elf" " >> ~/.bashrc 
 echo "export TARGET=i686-elf" >> /.bashrc
 echo "export PATH="$PREFIX/bin:$PATH" " >> ~/.bashrc
+echo "export TOOLCHAIN="$HOME/Toolchain/i686-elf" " >> ~/.bashrc
