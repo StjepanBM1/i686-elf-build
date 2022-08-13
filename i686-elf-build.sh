@@ -1,7 +1,7 @@
 
 # 
 # @AUTHOR :: Stjepan Bilić Matišić
-# @ABOUT  :: Simple Shell script to
+# @ABOUT  :: Simple shell script to
 #            build a cross-compiler
 #
 
@@ -12,3 +12,5 @@
 # GCC
 
 # Toolchain Test
+
+
